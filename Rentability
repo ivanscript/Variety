@@ -1,0 +1,43 @@
+#This programm developed in Python is about sugest a sale price for any article which were valued for lower prices, also giving profitability of products to a user.
+
+def rentability(price):
+
+  beginning = "Y"
+
+  while beginning == "Y":
+    has_VAT = float(input("Does the product has VAT? Type VAT percent: "))
+    VAT = has_VAT/100
+    articul_price = float(input("Please type your articul price: "))
+    if VAT != 0:
+        #first price suggested is based on 15% of profitability
+        suggested_price1 = (articul_price)+(articul_price*0.15)
+        print(f"With 15% of rentability the price is {suggested_price1} plus {VAT*100} of VAT, finally a total cost = {suggested_price1 + suggested_price1*VAT}")
+        print("======================================")
+        #Second price suggested is based on 20% of rentability
+        suggested_price2 = (articul_price)+(articul_price*0.2)
+        print(f"With 20% of rentability the price is {suggested_price2} plus {VAT*100} of VAT, finally a total cost = {suggested_price2 + suggested_price2*VAT}")
+        print("======================================") 
+        #Third price suggested is based on 25% of rentability
+        suggested_price3 = (articul_price)+(articul_price*0.25)
+        print(f"With 25% of rentability the price is {suggested_price3} plus {VAT*100} of VAT, finally a total cost = {suggested_price3 + suggested_price3*VAT}")
+        print("======================================") 
+        #Forth price suggested is based on 30% of rentability
+        suggested_price4 = (articul_price)+(articul_price*0.3)
+        print(f"With 30% of rentability the price is {suggested_price4} plus {VAT*100} of VAT, finally a total cost = {suggested_price4 + suggested_price4*VAT}")
+    else:
+        #first price suggested for no VAT is based on 15% of profitabily
+        no_VAT_suggested1 = (articul_price)+(articul_price*0.15)
+        print(f"With 15% of rentability the price is {no_VAT_suggested1}")
+        print("======================================")
+        #Second price suggested for no VAT is based on 20% of profitabily
+        no_VAT_suggested2 = (articul_price)+(articul_price*0.20)
+        print(f"With 20% of rentability the price is {no_VAT_suggested2}")
+        print("======================================")
+        #Third price suggested for no VAT is based on 25% of profitabily
+        no_VAT_suggested3 = (articul_price)+(articul_price*0.25)
+        print(f"With 25% of rentability the price is {no_VAT_suggested3}")
+        print("======================================")
+        #forth price suggested for no VAT is based on 30% of profitabily
+        no_VAT_suggested4 = (articul_price)+(articul_price*0.3)
+        print(f"With 30% of rentability the price is {no_VAT_suggested4}")
+        print("======================================")
